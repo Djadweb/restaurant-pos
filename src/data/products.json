@@ -1,0 +1,57 @@
+[
+    {
+        "img": "https://cbsnews1.cbsistatic.com/hub/i/2015/07/01/0b059f60-344d-4ada-baae-e683aff3650a/istock000044051102large.jpg",
+        "name": "Pasta",
+        "price": "13.33"
+    },
+    {
+        "img": "http://simply-delicious-food.com/wp-content/uploads/2020/06/Grilled-Pizza-Margherita-3.jpg",
+        "name": "Pizza",
+        "price": "15"
+    },
+    {
+        "img": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2017/11/14/0/FN_healthy-fast-food-applebees-steak_s4x3.jpg.rend.hgtvcom.441.331.suffix/1510694267044.jpeg",
+        "name": "Dish",
+        "price": "25"
+    },
+    {
+        "img": "https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2018/07/14/Photos/Processed/iStockphoto-kqbD--621x414@LiveMint.jpg",
+        "name": "Pack",
+        "price": "17"
+    },
+    {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK2zYD5hOmky6uu42ntTUVXD7TRaoMmPCopGBhaJE3piMA5nq-XTflha7JGakL_BXZtkQ&usqp=CAU",
+        "name": "Special",
+        "price": "8"
+    },
+    {
+        "img": "https://www.deputy.com/uploads/2018/10/The-Most-Popular-Menu-Items-That-You-should-Consider-Adding-to-Your-Restaurant_Content-image1-min-1024x569.png",
+        "name": "Pancakes",
+        "price": "33"
+    },
+    {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkwZXvO2FhkZXqRkZBmJCq8dYCvSa1uVGQ9Q&usqp=CAU",
+        "name": "Meat",
+        "price": "15"
+    },
+    {
+        "img": "https://www.rewardsnetwork.com/wp-content/uploads/2016/12/IndianFood_Main.jpg",
+        "name": "Indian food",
+        "price": "22"
+    },
+    {
+        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-crunchwrap-supreme-horizontal-1535666977.jpg?crop=1.00xw:0.853xh;0,0&resize=480:*",
+        "name": "New menu",
+        "price": "11.15"
+    },
+    {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkwZXvO2FhkZXqRkZBmJCq8dYCvSa1uVGQ9Q&usqp=CAU",
+        "name": "Meat",
+        "price": "15"
+    },
+    {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaxaihuP3qlwBepbqZzYE7MyMDgC9PivQMRw&usqp=CAU",
+        "name": "Plate",
+        "price": "11"
+    }    
+]

@@ -1,0 +1,45 @@
+
+.ticket {
+    width: 35%;
+    background-color: #FFF;
+    height: 85vh;
+    padding: 10px;    
+    margin: 20px 0 0 10px;
+    border-radius: 10px;
+
+    .ticket__information {
+        border: 1px solid;       
+        height: 90%;
+        box-shadow: 3px 3px 5px;        
+        font-family: sans-serif;
+
+        .cafe {
+            margin: 5px auto;
+            text-align: center;
+            font-size: .9rem;
+
+            .cafe__name {
+                font-size: 1.5rem;
+            }
+
+            .cafe__number {
+                font-weight: bold;
+            }
+        }
+
+        .ticket__table {            
+            table {
+                width: 100%;
+                border: 1px solid;
+                border-left: 0;
+                border-right: 0;
+                border-style: dashed;
+                font-size: 14px;
+
+                .items__description {
+                    columns: 2;
+                }
+            }
+        }
+    }
+}

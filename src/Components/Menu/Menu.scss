@@ -1,0 +1,16 @@
+
+.menu {
+    width: 65%;
+    background-color: rgb(32, 32, 32);
+    height: 85vh;
+    padding: 10px;
+    display: flex;    
+    flex-wrap: wrap;    
+    justify-content: flex-end;    
+    overflow-y: scroll;
+    //temporary
+    right: 0;
+    margin-left: auto;
+    margin: 20px;
+    //
+}
