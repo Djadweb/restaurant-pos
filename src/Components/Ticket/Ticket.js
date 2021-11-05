@@ -1,7 +1,7 @@
 import React from 'react';
 import './Ticket.scss';
 
-function Ticket({products, empty}) {       
+function Ticket({products, empty, remove}) {       
     var total = products.reduce((amount, item) => (amount+parseInt(item.price)),0);        
     
     const handleEmptyTicket = () => {
@@ -10,6 +10,10 @@ function Ticket({products, empty}) {
 
     const handlePrint = () => {
         window.print();
+    }
+
+    const handleDeleteProduct = (item) => {
+        remove(item);
     }
     return (
         <div className="ticket">
@@ -37,7 +41,7 @@ function Ticket({products, empty}) {
                                 <td className="items__description">{item.name}</td>
                                 <td>1</td>
                                 <td>{item.price}</td>
-                                <td className="remove-icon">❌</td>
+                                <td onClick={() => handleDeleteProduct(item)} className="remove-icon">❌</td>
                             </tr>                            
                         ))}                                            
                         </tbody>                     
