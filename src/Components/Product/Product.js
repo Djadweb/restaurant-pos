@@ -1,7 +1,7 @@
 import React from 'react';
 import './Product.scss';
 
-function Product({img, name, price}) {
+function Product({img, name, price}) {    
     return (
         <div className="product">
             <div className="product__image">

@@ -5,14 +5,17 @@
     height: 85vh;
     padding: 10px;    
     margin: 20px 0 0 10px;
-    border-radius: 10px;
+    border-radius: 10px;    
 
     .ticket__information {
         border: 1px solid;       
         height: 90%;
         box-shadow: 3px 3px 5px;        
-        font-family: sans-serif;
-
+        font-family: sans-serif;        
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;        
         .cafe {
             margin: 5px auto;
             text-align: center;
@@ -27,19 +30,71 @@
             }
         }
 
-        .ticket__table {            
+        .ticket__table {       
+            height: 100%;
+            overflow-y: scroll;
             table {
-                width: 100%;
-                border: 1px solid;
-                border-left: 0;
-                border-right: 0;
-                border-style: dashed;
+                padding: 5px;
                 font-size: 14px;
+                text-align: left;
+                width: 100%;                
+
+                th {                                                
+                    border: 1px solid;
+                    border-left: 0;
+                    border-right: 0;
+                    border-style: dashed;
+                }
+
+                tr {
+                    text-align: center;
+                }
 
                 .items__description {
                     columns: 2;
+                    text-align: left;
+                }
+
+                .remove-icon {
+                    text-align: center;
+                    cursor: pointer;
                 }
             }
+        }
+
+        .subtotal {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: right;                                            
+            width: 100%;     
+            margin: 10px 0;              
+            hr {
+                border: 1px solid;                
+                border-style: dashed;
+            }
+
+            .subtotal__price {
+                margin: 5px 20px;
+            }
+        }
+    }
+
+    .ticket__actions {
+        width: 100%;
+        border: solid 2px #000;
+        border-radius: 5px;
+        height: 10%;
+        margin: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+        padding: 0 20px;
+
+        button {
+            cursor: pointer;
+            border: none;       
+            background-color: transparent;
+            font-size: 1.5rem;                 
         }
     }
 }

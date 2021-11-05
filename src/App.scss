@@ -15,3 +15,39 @@
         display: flex;                
     }        
 }
+
+@media print {
+    .menu, .navbar {
+        display: none;
+    }
+
+    .ticket {        
+        width: 400px;
+        
+        .ticket__information {
+            box-shadow: none;
+            border: none;
+
+            .ticket__table {
+                overflow: visible;
+
+                .items__description {
+                    columns: 2!important;      
+                    display: flex; 
+                }
+            }
+        }        
+
+        .remove-icon {
+            display: none;
+        }        
+
+        .ticket__actions {
+            display: none;
+        }
+    }
+
+     @page {
+         margin: 0;
+     }
+}

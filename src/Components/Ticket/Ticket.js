@@ -1,7 +1,16 @@
 import React from 'react';
 import './Ticket.scss';
 
-function Ticket() {
+function Ticket({products, empty}) {       
+    var total = products.reduce((amount, item) => (amount+parseInt(item.price)),0);        
+    
+    const handleEmptyTicket = () => {
+        empty();
+    }
+
+    const handlePrint = () => {
+        window.print();
+    }
     return (
         <div className="ticket">
             <div className="ticket__information">
@@ -11,19 +20,43 @@ function Ticket() {
                     <p>New York, NY</p>
                     <p className="cafe__number">888-888-8888</p>
                     <p className="invoice__number">Invoice #5080</p>
-                </div>
+                </div>              
                 <div className="ticket__table">
                     <table>
-                        <tr>
-                            <th className="items__description">Description</th>
-                            <th className="items__qty">Qty</th>
-                            <th className="items__price">Price</th>
-                            <th className="items__subDel">Sub Del</th>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th className="items__description">Description</th>
+                                <th className="items__qty">Qty</th>
+                                <th className="items__price">Price</th>
+                                <th className="remove-icon">Remove</th>
+                            </tr>
+                        </thead>   
+                        <tbody>            
+                        {products?.map((item, index) => (                            
+                            <tr key={index}>
+                                <td className="items__description">{item.name}</td>
+                                <td>1</td>
+                                <td>{item.price}</td>
+                                <td className="remove-icon">❌</td>
+                            </tr>                            
+                        ))}                                            
+                        </tbody>                     
                     </table>
                 </div>
+
+                <div className="subtotal">
+                    <hr/>   
+                    <div className="subtotal__price">                                                      
+                        Subtotal: ${total}
+                    </div>                                     
+                    <hr/>                    
+                </div>
+
             </div>
-            <div className="ticket__actions"></div>
+            <div className="ticket__actions">
+                <button onClick={() => handlePrint()}>💳</button>            
+                <button onClick={() => handleEmptyTicket()}>🗑️</button>
+            </div>
         </div>
     )
 }
